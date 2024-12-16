@@ -36,6 +36,8 @@ With these basics in place, you’re all set to get started! 🚀
 
 3. To check if Apache2 is running correctly, use the command below:
 
+    ```bash
+   sudo systemctl status apache2
 
 ## Part 3: Clone the Repository and Assign the Required Permissions
 1. Clone the repository containing your HTML, CSS, and other files using `git clone`.
