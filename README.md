@@ -62,7 +62,13 @@ With these basics in place, you’re all set to get started! 🚀
    sudo apt install certbot python3-certbot-apache -y
    
 2. Obtain the SSL certificate and configure HTTPS for your domain with:
+
+``bash
 sudo certbot --apache -d web.josh.mooo.com
 
 This command will automatically configure your Apache server to enable HTTPS.
+
+## Verify the SSL Certificate
+
+Once the SSL certificate is deployed, visit your domain (e.g., https://web.josh.mooo.com) and check for the secure connection indicated by the padlock icon in the address bar.
 
