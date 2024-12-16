@@ -48,6 +48,25 @@ With these basics in place, you’re all set to get started! 🚀
 8. Enable the new site configuration with `a2ensite`.
 9. Reload, restart, start, and check Apache2 status using `systemctl`.
 
+## Part 4: Verify IP and Configure HTTPS with a Free SSL Certificate
+
+1. Verify the cloned webpage by copying the IP address of your instance and pasting it into a browser.
+2. Create a domain for your webpage and connect it to your instance’s IP address (e.g., **web.josh.mooo.com**).
+
+## Set up HTTPS using a free SSL certificate from Let’s Encrypt
+
+1. Install the necessary packages:
+
+   ```bash
+   sudo apt update
+   sudo apt install certbot python3-certbot-apache -y
+   
+2. Obtain the SSL certificate and configure HTTPS for your domain with:
+
+ ```bash
+sudo certbot --apache -d web.josh.mooo.com
+
+This command will automatically configure your Apache server to enable HTTPS.
 
 
 
