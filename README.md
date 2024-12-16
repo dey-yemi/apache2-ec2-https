@@ -66,7 +66,7 @@ With these basics in place, you’re all set to get started! 🚀
 2. Obtain the SSL certificate and configure HTTPS for your domain with:
 
    ```bash
-sudo certbot --apache -d web.josh.mooo.com
+   sudo certbot --apache -d web.josh.mooo.com
 
 This command will automatically configure your Apache server to enable HTTPS.
 
