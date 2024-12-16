@@ -39,3 +39,6 @@ With these basics in place, you’re all set to get started! 🚀
 ```bash
 sudo systemctl status apache2
 
+## Part 3: Clone the Repository and Assign the Required Permissions
+
+
