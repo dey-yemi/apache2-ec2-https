@@ -36,14 +36,19 @@ With these basics in place, you’re all set to get started! 🚀
 
 3. To check if Apache2 is running correctly, use the command below:
 
-```bash
-sudo systemctl status apache2
+
+## Part 3: Clone the Repository and Assign the Required Permissions
+1. Clone the repository containing your HTML, CSS, and other files using `git clone`.
+2. Verify the files with `ls` and navigate into the cloned repository.
+3. Move the repository to `/var/www/` (e.g., **altschool-assignment-1**).
+4. Duplicate the default Apache configuration file in the **sites-available** folder.
+5. Edit the configuration file to include the necessary `ServerName`, `ServerAlias`, and `DocumentRoot`.
+6. Apply the required permissions with `chown` and disable the default site using `a2dissite`.
+7. Set a password for the instance with `sudo passwd ubuntu`.
+8. Enable the new site configuration with `a2ensite`.
+9. Reload, restart, start, and check Apache2 status using `systemctl`.
 
 
-
-
-
-## Part 2: Updating the Instance and Installing Apache2 Web Server
 
 
 
