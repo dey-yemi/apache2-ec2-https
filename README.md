@@ -39,34 +39,3 @@ With these basics in place, you’re all set to get started! 🚀
 ```bash
 sudo systemctl status apache2
 
-## Part 3: Clone the Repository and Assign the Required Permissions
-
-1. Clone the repository containing your HTML, CSS, and other files using `git clone`.
-2. Verify the files with `ls` and navigate into the cloned repository.
-3. Move the repository to `/var/www/` (e.g., **altschool-assignment-1**).
-4. Duplicate the default Apache configuration file in the **sites-available** folder.
-5. Edit the configuration file to include the necessary `ServerName`, `ServerAlias`, and `DocumentRoot`.
-6. Apply the required permissions with `chown` and disable the default site using `a2dissite`.
-7. Set a password for the instance with `sudo passwd ubuntu`.
-8. Enable the new site configuration with `a2ensite`.
-9. Reload, restart, start, and check Apache2 status using `systemctl`.
-
-## Part 4: Verify IP and Configure HTTPS with a Free SSL Certificate
-
-1. Verify the cloned webpage by copying the IP address of your instance and pasting it into a browser.
-2. Create a domain for your webpage and connect it to your instance’s IP address (e.g., **web.josh.mooo.com**).
-3. Set up HTTPS using a free SSL certificate from Let’s Encrypt by running:
-
-   ```bash
-   sudo apt update
-   sudo apt install certbot python3-certbot-apache -y
-
-Obtain the SSL certificate and configure HTTPS for your domain with:
-  
-   ```bash
-sudo certbot --apache -d web.josh.mooo.com
-
-This command will automatically configure your Apache server to enable HTTPS.
-
-Once the SSL certificate is deployed, visit your domain (e.g., https://web.josh.mooo.com) and check for the secure connection indicated by the padlock icon in the address bar.
-
